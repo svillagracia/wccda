@@ -11,6 +11,6 @@ Seattle, Washington
 
 #### UX/UI Design: [Robert L. Sanders](http://www.robertleesanders.com)
 
-#### Development: [Sean A. Villagracia](http://www.svillagacia.com)
+#### Development: [Sean A. Villagracia](http://www.svillagracia.com)
 
 Final Delivery Date: April 1, 2016
