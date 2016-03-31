@@ -1,0 +1,29 @@
+/* Globals
+*************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #717171;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.wrapper {                        // Wrapper around all block content
+  position: relative;
+  width: 100%;
+}
+

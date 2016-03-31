@@ -1,0 +1,93 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../content/hero--image.jpg") no-repeat left top;
+  background-size: 100% 100%;
+  position: relative;
+  text-align: center;
+    height: 850px;
+
+  @include respond-to(mobile) {
+    background-position-x: 50%;
+    background-size: 200% 100%;
+    height: 450px;
+  }
+
+  &--block {
+    color: #ffffff;
+    padding-top: 16%;
+
+    h1 {
+      font-weight: bold;
+      font-size: 63pt;
+      margin-bottom: 35px;
+
+      @include respond-to(mobile) {
+        font-size: 30pt;
+        font-weight: 600;
+      }
+    }
+
+    h4 {
+      font-size: 30pt;
+
+      @include respond-to(mobile) {
+        font-size: 10pt;
+      }
+    }
+
+    a {
+
+
+      button {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 9pt;
+        font-weight: bold;
+        margin: 48px 25px 0 25px;
+        z-index: 9;
+          height: 45px;
+          width: 250px;
+
+        @include respond-to(mobile) {
+          margin: 25px 25px 0 25px;
+        }
+
+        i {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+      }
+
+
+      &:nth-child(5) {
+        display: none;
+
+        @include respond-to(mobile) {
+          display: inline-block;
+          margin-top: 0;
+
+          button {
+            background: #bbb;
+            color: #717171;
+          }
+        }
+      }
+    }
+
+  }
+
+  .partners {
+    background: #f1f1f1;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+      width: 100%;
+
+    @include respond-to(mobile) {
+      display: none;
+    }
+  }
+
+}

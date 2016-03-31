@@ -1,0 +1,51 @@
+#top--logo {
+  float: left;
+  margin: 15px 0 0 3%;
+    height: 130px;
+    width: 131px;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  width: 65%;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+
+  &--list {
+    padding: 50px 0 0 0;
+    color: #ffffff;
+    font-size: 15pt;
+    font-weight: 600;
+
+    &__links {
+      display: inline-block;
+      margin: 0 3%;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        button {
+          background-color: rgba(0, 0, 0, 0);
+          border: 2px solid #ffffff;
+          border-radius: 5px;
+          color: #ffffff;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 15pt;
+          position: relative;
+          bottom: 5px;
+            height: 54px;
+            width: 180px;
+        }
+      }
+    }
+  }
+}

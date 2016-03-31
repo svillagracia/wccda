@@ -1,0 +1,268 @@
+.wrapper {
+  .why {
+    text-align: center;
+
+    h3 {
+      color: #4f4f4f;
+      font-size: 38pt;
+      font-weight: bold;
+      margin: 124px 0 60px 0;
+
+      @include respond-to(mobile) {
+        font-size: 20pt;
+        margin-top: 50px;
+      }
+    }
+
+    p {
+      color: #717171;
+      font-size: 20pt;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 1000px;
+      margin-bottom: 90px;
+
+      @include respond-to(mobile) {
+        display: none;
+      }
+    }
+
+    .video {
+      margin-bottom: 155px;
+
+      @include respond-to(mobile) {
+        margin-bottom: 0;
+      }
+
+      iframe {
+        @include respond-to(mobile) {
+          height: 300px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .promise {
+    text-align: center;
+
+    h3 {
+      color: #4f4f4f;
+      font-size: 38pt;
+      font-weight: bold;
+      margin-bottom: 60px;
+
+      @include respond-to(mobile) {
+        font-size: 20pt;
+        margin: 100px 0 20px 0;
+      }
+    }
+
+    p {
+      color: #717171;
+      font-size: 20pt;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 1200px;
+      margin-bottom: 90px;
+
+      @include respond-to(mobile) {
+        font-size: 12pt;
+        margin: 0 20px;
+        text-align: left;
+      }
+    }
+
+  }
+
+  .pillar {
+
+    .family {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../content/family--dev.jpg') left top no-repeat;
+    }
+
+    .community {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../content/community.jpg') left top no-repeat;
+    }
+
+    .neighborhood {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../content/neighborhood.jpg') left top no-repeat;
+    }
+
+    .family,
+    .community,
+    .neighborhood {
+      background-position: 50% 50%;
+      background-size: 100% 200%;
+
+        @include respond-to(mobile) {
+          background-size: 100% 100%;
+        }
+    }
+
+    &--head {
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+        height: 313px;
+        width: 1165px;
+
+      @include respond-to(mobile) {
+        margin: 50px 0 30px 0;
+          height: 150px;
+          width: 100%;
+      }
+
+      &__text {
+        position: absolute;
+        text-align: left;
+          bottom: 40px;
+          left: 46px;
+
+        @include respond-to(mobile) {
+          padding: 8% 0;
+          position: relative;
+          text-align: center;
+            bottom: initial;
+            left: initial;
+            height: 100%;
+        }
+
+        h3 {
+          color: #ffffff;
+          font-size: 30pt;
+
+          &:nth-child(1) {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          @include respond-to(mobile) {
+            font-size: 20pt;
+
+            &:nth-child(1) {
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+
+            &:nth-child(2) {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+
+    }
+
+    &--block {
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      width: 100%;
+      max-width: 1100px;
+
+      @include respond-to(mobile) {
+        margin-bottom: initial;
+        padding: 0 20px;
+        width: initial;
+      }
+
+      h4 {
+        color: #4f4f4f;
+        font-size: 18pt;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        @include respond-to(mobile) {
+          font-size: 17px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+      }
+
+      p {
+        color: #717171;
+        font-size: 16pt;
+
+        @include respond-to(mobile) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+
+    .donate {
+      margin: 50px 0;
+      text-align: center;
+        width: 100%;
+
+      a.footer--button {
+        button {
+          background-color: rgba(0, 0, 0, 0);
+          border: 2px solid #9E9C9D;
+          border-radius: 5px;
+          color: #717171;
+          cursor: pointer;
+          font-size: 16pt;
+          font-weight: bold;
+          z-index: 9;
+            height: 65px;
+            width: 250px;
+        }
+      }
+    }
+
+  .footer--image {
+    background: url('../../content/footer.png') left top no-repeat;
+    height: 95vh;
+    background-size: 100%;
+
+    @include respond-to(mobile) {
+      background-size: 200% 100%;
+      background-position-x: 50%;
+        height: 500px;
+        width: 100%;
+    }
+  }
+
+  .footer {
+    position: relative;
+    text-align: center;
+      height: 130px;
+      width: 100%;
+
+    @include respond-to(mobile) {
+      display: none;
+    }
+
+    p,
+    .icons {
+      display: inline-block;
+      margin-top: 50px;
+    }
+
+    .web {
+      position: absolute;
+      left: 50px;
+      top: 5px;
+    }
+
+
+    .icons {
+      cursor: pointer;
+      font-size: 20pt;
+      position: absolute;
+      right: 50px;
+
+      a {
+        margin: 0 8px;
+
+        i {
+          color: #717171;
+        }
+      }
+    }
+  }
+}
